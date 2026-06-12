@@ -1,6 +1,6 @@
 print("Session Kills Counter - Stable release Loaded")
 
--- Localize Hệ Thống Tuyệt Đối (Triệt tiêu hoàn toàn Global Lookup / Absolute System Localization)
+-- Localize
 local math_floor, math_sin, math_max, math_min, math_abs = math.floor, math.sin, math.max, math.min, math.abs
 local string_format = string.format
 local globals_RealTime = globals.RealTime
