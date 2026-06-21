@@ -150,6 +150,7 @@ callbacks.Register("Draw", function()
     local real_time = globals_RealTime()
     local is_menu_open = false
 
+    if real_time < last_config_tick then last_config_tick = 0 end
     if real_time - last_config_tick > 0.1 then
         is_menu_open = aimware_menu and aimware_menu:IsActive()
         menu_enabled = kt_enable:GetValue()
