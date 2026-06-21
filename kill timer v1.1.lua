@@ -45,7 +45,7 @@ for i = 0, 160 do TIME_STRINGS[i] = string_format("%.1fs", i / 10) end
 local KILL_STRINGS_WITH_LIMIT = {}
 local KILL_STRINGS_NO_LIMIT = {}
 for k = 0, 50 do
-    KILL_STRINGS_NO_LIMIT[k] = string_format("ROUND KILLS: %d", k)
+    KILL_STRINGS_NO_LIMIT[k] = string_format("ROUND KILLS:  %d", k)
     KILL_STRINGS_WITH_LIMIT[k] = {}
     for l = 1, 5 do KILL_STRINGS_WITH_LIMIT[k][l] = string_format("ROUND KILLS: %d / %d", k, l) end
 end
