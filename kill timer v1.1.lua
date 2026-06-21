@@ -309,7 +309,6 @@ callbacks.Register("Draw", function()
     local alpha_neon = is_alert_triggered and alert_alpha_modifier or (is_faded_mode and 35 or 130)
     local alpha_text = is_faded_mode and 90 or 255
 
-    -- Vẽ kết cấu đa lớp
     draw_Color(r, g, b, is_faded_mode and 3 or (is_alert_triggered and 25 or 15))
     draw_RoundedRectFill(render_x - 3, menu_y - 3, render_x + box_w + 3, menu_y + box_h + 3, radius + 1)
     
