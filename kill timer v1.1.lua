@@ -22,7 +22,7 @@ if init_menukey and init_menukey ~= 0 then wnd:SetOpenKey(init_menukey) end
 
 local group_controls = gui.Groupbox(wnd, "Configuration", 15, 15, 320, 260)
 local kt_enable = gui.Checkbox(group_controls, "kt_enable", "Enable Kill Timer", true)
-local kt_duration = gui.Slider(group_controls, "kt_duration", "Max Tempo Duration (s)", 5.0, 1.0, 15.0, 0.5)
+local kt_duration = gui.Slider(group_controls, "kt_duration", "Max Tempo Duration (s)", 5.0, 0, 15.0, 0.5)
 
 local kt_limit_enable = gui.Checkbox(group_controls, "kt_limit_enable", "Enable Kill Limit Notification", true)
 local kt_limit = gui.Slider(group_controls, "kt_limit", "Round Kill Limit", 5, 1, 5, 1)
