@@ -18,7 +18,7 @@ What's new in v2.0?
 print("Kill Timer v2.0 loaded!")
 print("youtube.com/@url.isp2")
 print("discord: chillguy_2345")
-print("please like me a like and subcribe to my youtube channel if you like this lua")
+print("please give me a like and subcribe to my youtube channel if you like this lua")
 print("thank ya so much, hope you enjoy this lua^^")
 
 local f, sin, max, min = math.floor, math.sin, math.max, math.min
