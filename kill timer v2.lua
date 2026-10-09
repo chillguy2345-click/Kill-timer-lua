@@ -197,7 +197,7 @@ callbacks.Register("CreateMove", function()
     -- rage disabler
     local r_disabler = (cfg_rage_safe:GetValue() and ((not timer_ended and state.kills > 0) or alert)) or (cfg_rage_jump:GetValue() and not on_ground)
     if r_disabler ~= cache.rage then
-        if no_rage then
+        if r_disabler then
             cache.orig_r = get_val("rbot.enable")
             set_val("rbot.enable", false)
         else
@@ -210,7 +210,7 @@ callbacks.Register("CreateMove", function()
     -- legit disabler
     local l_disabler = cfg_legit_safe:GetValue() and ((not timer_ended and state.kills > 0) or alert)
     if l_disabler ~= cache.legit then
-        if no_legit then
+        if l_disabler then
             cache.orig_lt, cache.orig_la = get_val("lbot.trg.enable"), get_val("lbot.aim.enable")
             set_val("lbot.trg.enable", false); set_val("lbot.aim.enable", false)
         else
